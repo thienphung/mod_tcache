@@ -453,10 +453,10 @@ ngx_http_tcache_send(ngx_http_request_t *r, ngx_http_tcache_ctx_t *ctx)
     ngx_int_t                              rc;
     ngx_buf_t                             *b, *cb;
     ngx_chain_t                            out;
-    ngx_http_tcache_node_t                *node;
+    //ngx_http_tcache_node_t                *node;
     ngx_http_tcache_content_header_t      *h;
 
-    node = ctx->node;
+    //node = ctx->node;
 
     ngx_log_debug1(NGX_LOG_DEBUG_HTTP, r->connection->log, 0,
                    "tcache send request \"%V\"", &r->uri);

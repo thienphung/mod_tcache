@@ -6,6 +6,9 @@
 #include <ngx_http.h>
 #include <nginx.h>
 
+#if !defined(NGX_HTTP_CACHE_KEY_LEN)
+    #define NGX_HTTP_CACHE_KEY_LEN       16
+#endif
 
 typedef struct ngx_http_tcache_ctx_s ngx_http_tcache_ctx_t;
 typedef struct ngx_http_tcache_node_s ngx_http_tcache_node_t;

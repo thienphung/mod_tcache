@@ -402,12 +402,12 @@ ngx_http_tcache_slab_expire(ngx_http_tcache_t *cache)
     time_t                             now;
     ngx_uint_t                         freed;
     ngx_queue_t                       *q;
-    ngx_slab_pool_t                   *shpool;
+    //ngx_slab_pool_t                   *shpool;
     ngx_http_tcache_node_t            *tn;
     ngx_http_tcache_slab_sh_t         *sh;
     ngx_http_tcache_slab_node_index_t *index;
 
-    shpool = cache->shpool;
+    //shpool = cache->shpool;
     sh = cache->sh;
 
     freed = 0;
@@ -468,18 +468,18 @@ ngx_http_tcache_slab_expire(ngx_http_tcache_t *cache)
 static void
 ngx_http_tcache_slab_force_expire(ngx_http_tcache_t *cache)
 {
-    time_t                             now;
+    //time_t                             now;
     ngx_uint_t                         tries;
     ngx_queue_t                       *q;
-    ngx_slab_pool_t                   *shpool;
+    //ngx_slab_pool_t                   *shpool;
     ngx_http_tcache_node_t            *tn;
     ngx_http_tcache_slab_sh_t         *sh;
     ngx_http_tcache_slab_node_index_t *index;
 
-    shpool = cache->shpool;
+    //shpool = cache->shpool;
     sh = cache->sh;
 
-    now = ngx_time();
+    //now = ngx_time();
 
     tries = 20;
 
